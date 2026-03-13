@@ -5,7 +5,9 @@ on:
   push:
     paths:
       - "*.tap"
-
+permissions:
+  contents: write
+  
 jobs:
   update-md:
     runs-on: ubuntu-latest
